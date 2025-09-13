@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const JobActionSchema = mongoose.Schema(
+const applySchema = new mongoose.Schema(
   {
     JobId: {
       type: String,
@@ -19,6 +19,6 @@ const JobActionSchema = mongoose.Schema(
   { timestams: true }
 );
 
-const JobActions = mongoose.model("jobactions", JobActionSchema);
+const Applications = mongoose.model("jobactions", applySchema);
 
-export default JobActions;
+export default Applications;

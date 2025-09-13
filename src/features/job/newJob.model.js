@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-const JobSchema = mongoose.Schema(
+const jobSchema = new mongoose.Schema(
   {
     Sector: {
       type: String,
@@ -114,5 +114,5 @@ const JobSchema = mongoose.Schema(
 
   { timestamps: true }
 );
-const Jobs = mongoose.model("Jobs", JobSchema);
+const Jobs = mongoose.model("Jobs", jobSchema);
 export default Jobs;
